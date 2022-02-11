@@ -1,6 +1,7 @@
-# photo-werewolf
+# blog_JT_front
 
-【Under construction】
+日本と台灣華語対応のブログ
 
-Next.js + Firebaseの構成で作るコミュニケーションゲームアプリ。
-スマホのカメラロールにある写真を使って遊ぶ人狼ゲーム。
+https://nittai-one.com
+
+erbで書いていたフロント部分をNextjsに置き換えていく。
