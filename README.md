@@ -5,3 +5,8 @@
 https://nittai-one.com
 
 erbで書いていたフロント部分をNextjsに置き換えていく。
+
+## 技術構成
+* Next.js
+* TypeScript
+* Storybook(Atomic Design)
