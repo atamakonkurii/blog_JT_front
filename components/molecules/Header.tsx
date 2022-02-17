@@ -6,7 +6,7 @@ import "./header.css";
 
 type User = {
   name: string;
-  image: string;
+  image?: string;
 };
 
 interface HeaderProps {

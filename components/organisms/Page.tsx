@@ -5,6 +5,7 @@ import './page.css';
 
 type User = {
   name: string;
+  image: string;
 };
 
 export const Page: React.VFC = () => {
@@ -14,9 +15,6 @@ export const Page: React.VFC = () => {
     <article>
       <Header
         user={user}
-        onLogin={() => setUser({ name: 'Jane Doe' })}
-        onLogout={() => setUser(undefined)}
-        onCreateAccount={() => setUser({ name: 'Jane Doe' })}
       />
 
       <section>
