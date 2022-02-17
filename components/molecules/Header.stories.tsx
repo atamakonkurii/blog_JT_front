@@ -17,7 +17,8 @@ const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
   user: {
-    name: 'Jane Doe',
+    name: 'Mimo',
+    image: 'https://static.nittai-one.com/uploads/user/avatar/2/CE1865EF-A2B8-4E83-9701-08EBF1E5E68C.jpeg',
   },
 };
 
