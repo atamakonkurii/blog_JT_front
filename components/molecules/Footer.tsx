@@ -7,11 +7,11 @@ type User = {
   image?: string;
 };
 
-interface HeaderProps {
+interface FooterProps {
   user?: User;
 }
 
-export const Header = ({ user }: HeaderProps) => (
+export const Footer = ({ user }: FooterProps) => (
   <header>
     <div className="flex items-center justify-between h-14 bg-nittai_teal shadow text-white">
       <span className="ml-2 text-lg md:text-2xl font-bold">日台one!</span>
