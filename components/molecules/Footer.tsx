@@ -8,7 +8,7 @@ export const Footer = () => (
         <span className="text-gray-500 ml-1 text-xl">日台one!</span>
       </a>
       <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-        © 2021 Nittaione!
+        © 2022 Nittaione!
       </p>
 
       <div className="flex flex-col text-sm mx-auto text-center sm:my-0 my-2">
