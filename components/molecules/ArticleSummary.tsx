@@ -28,10 +28,13 @@ export const ArticleSummary = ({ user }: ArticleSummaryProps) => (
         <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
           TITLE
         </h2>
-        <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-          タイトルです
+        <h1 className="title-font text-lg font-medium text-gray-900 mb-3 truncate">
+          タイトルですタイトルですタイトルですタイトルです
         </h1>
-        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        <div className="text-gray-500 line-clamp-2">
+        ありがとうございます。ありがとうございます。ありがとうございます。ありがとうございます。ありがとうございます。
+        </div>
+        
         <div className="flex items-center flex-wrap">
           <p className="text-sm md:text-base font-normal text-gray-400">
             日本 愛知

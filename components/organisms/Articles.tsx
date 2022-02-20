@@ -15,7 +15,7 @@ interface ArticlesProps {
 
 export const Articles: React.VFC<ArticlesProps> = (props) => {
   return (
-    <article>
+    <>
       <Header user={props.user} />
       <div className="flex flex-wrap m-2">
         <ArticleSummary
@@ -48,6 +48,6 @@ export const Articles: React.VFC<ArticlesProps> = (props) => {
         />
       </div>
       <Footer />
-    </article>
+    </>
   );
 };
