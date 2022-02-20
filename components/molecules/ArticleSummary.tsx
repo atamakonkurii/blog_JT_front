@@ -15,26 +15,24 @@ interface ArticleSummaryProps {
 export const ArticleSummary = ({ user }: ArticleSummaryProps) => (
   <div className="p-4 md:w-1/3">
     <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-      <div>
-        <Image
-          src="https://dummyimage.com/720x400"
-          width={720}
-          height={400}
-          alt="blog"
-        />
-      </div>
+      <Image
+        src="https://dummyimage.com/720x400"
+        alt="blog"
+        width={720}
+        height={420}
+      />
 
       <div className="p-6">
         <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
           TITLE
         </h2>
-        <h1 className="title-font text-lg font-medium text-gray-900 mb-3 truncate">
+        <h1 className="title-font text-lg font-medium text-gray-900 mb-3 line-clamp-1">
           タイトルですタイトルですタイトルですタイトルです
         </h1>
         <div className="text-gray-500 line-clamp-2">
-        ありがとうございます。ありがとうございます。ありがとうございます。ありがとうございます。ありがとうございます。
+          ありがとうございます。ありがとうございます。ありがとうございます。ありがとうございます。ありがとうございます。
         </div>
-        
+
         <div className="flex items-center flex-wrap">
           <p className="text-sm md:text-base font-normal text-gray-400">
             日本 愛知

@@ -17,7 +17,7 @@ export const Articles: React.VFC<ArticlesProps> = (props) => {
   return (
     <>
       <Header user={props.user} />
-      <div className="flex flex-wrap m-2">
+      <div className="flex flex-wrap m-2 max-w-screen-xl mx-auto">
         <ArticleSummary
           user={{
             image:
