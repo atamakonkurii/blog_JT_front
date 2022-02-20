@@ -12,7 +12,9 @@ export const UserImage = ({ userImageUrl, size }: UserImageProps) => {
       <Image
         src={userImageUrl}
         alt={"userImage"}
-        className="rounded-full w-10 h-10"
+        width= {40}
+        height={40}
+        className="rounded-full"
       />
     );
   } else if (size === "medium") {
@@ -20,7 +22,9 @@ export const UserImage = ({ userImageUrl, size }: UserImageProps) => {
       <Image
         src={userImageUrl}
         alt={"userImage"}
-        className="rounded-full w-20 h-20"
+        width= {80}
+        height={80}
+        className="rounded-full"
       />
     );
   } else {
@@ -28,7 +32,9 @@ export const UserImage = ({ userImageUrl, size }: UserImageProps) => {
       <Image
         src={userImageUrl}
         alt={"userImage"}
-        className="rounded-full w-30 h-30"
+        width= {120}
+        height={120}
+        className="rounded-full"
       />
     );
   }
