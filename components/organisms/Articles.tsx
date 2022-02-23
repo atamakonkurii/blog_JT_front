@@ -55,6 +55,3 @@ export const Articles: React.VFC<ArticlesProps> = (props) => {
     </>
   );
 };
-
-// image: {article.attributes.title_image.url}
-// "https://static.nittai-one.com/uploads/user/avatar/2/CE1865EF-A2B8-4E83-9701-08EBF1E5E68C.jpeg"
