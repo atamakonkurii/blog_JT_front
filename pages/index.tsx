@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Articles } from "../components/organisms/Articles";
 
-export default function Home() {
+export default function Home(props: { articles: { data: { data: any; } | undefined; }; }) {
   return (
     <>
       <Head>
@@ -10,7 +9,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Articles />
+      <Articles articles={props.articles.data}/>
+      {/* {console.log(props.articles.data)}; */}
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const response = await fetch(`https://nittai-one.com//api/v1/articles`);
+  const articles = await response.json();
+  
+  return{
+    props: {
+      articles
+    }
+  };
 }

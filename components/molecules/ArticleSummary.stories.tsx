@@ -18,6 +18,11 @@ const Template: ComponentStory<typeof ArticleSummary> = (args) => (
 
 export const Normal = Template.bind({});
 Normal.args = {
+  article: {
+    title: 'タイトル',
+    content: 'コンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツ',
+    created_at: '100月100日'
+  },
   user: {
     name: "Mimo",
     image:

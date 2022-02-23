@@ -8,15 +8,23 @@ type User = {
   image?: string;
 };
 
+type Article = {
+  title_image?: string;
+  title: string;
+  content: string;
+  created_at: string;
+};
+
 interface ArticleSummaryProps {
   user: User;
+  article: Article;
 }
 
-export const ArticleSummary = ({ user }: ArticleSummaryProps) => (
+export const ArticleSummary = ({ user, article }: ArticleSummaryProps) => (
   <div className="p-4 md:w-1/3">
     <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
       <Image
-        src="https://dummyimage.com/720x400"
+        src={ article.title_image ||"https://dummyimage.com/720x400"}
         alt="blog"
         width={720}
         height={420}
@@ -27,11 +35,9 @@ export const ArticleSummary = ({ user }: ArticleSummaryProps) => (
           TITLE
         </h2>
         <h1 className="title-font text-lg font-medium text-gray-900 mb-3 line-clamp-1">
-          タイトルですタイトルですタイトルですタイトルです
+          {article.title}
         </h1>
-        <div className="text-gray-500 line-clamp-2">
-          ありがとうございます。ありがとうございます。ありがとうございます。ありがとうございます。ありがとうございます。
-        </div>
+        <div className="text-gray-500 line-clamp-2">{article.content}</div>
 
         <div className="flex items-center flex-wrap">
           <p className="text-sm md:text-base font-normal text-gray-400">
@@ -47,7 +53,7 @@ export const ArticleSummary = ({ user }: ArticleSummaryProps) => (
           <UserImage size="small" userImageUrl={user.image} />
           <div className="text-xs md:text-sm font-normal text-gray-400 pl-1 my-auto">
             <p>{user.name}</p>
-            1年前
+            {article.created_at}
           </div>
         </span>
       </div>
