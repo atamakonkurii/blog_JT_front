@@ -16,7 +16,7 @@ export default function Home(props: { articles: { data: { data: any; } | undefin
 }
 
 export async function getServerSideProps() {
-  const response = await fetch(`http://localhost:3000/api/v1/articles`);
+  const response = await fetch(`https://nittai-one.com//api/v1/articles`);
   const articles = await response.json();
   
   return{
