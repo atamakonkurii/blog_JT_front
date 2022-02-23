@@ -21,7 +21,7 @@ interface ArticleSummaryProps {
 }
 
 export const ArticleSummary = ({ user, article }: ArticleSummaryProps) => (
-  <div className="p-4 md:w-1/3">
+  <div className="p-4 md:w-1/3 w-full">
     <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
       <Image
         src={ article.title_image ||"https://dummyimage.com/720x400"}
@@ -37,7 +37,9 @@ export const ArticleSummary = ({ user, article }: ArticleSummaryProps) => (
         <h1 className="title-font text-lg font-medium text-gray-900 mb-3 line-clamp-1">
           {article.title}
         </h1>
-        <div className="text-gray-500 line-clamp-2">{article.content}</div>
+        <div className="text-gray-500 line-clamp-2">
+          {article.content}
+        </div>
 
         <div className="flex items-center flex-wrap">
           <p className="text-sm md:text-base font-normal text-gray-400">
